@@ -1,5 +1,8 @@
 body {
     font-family: sans-serif;
+    max-width: 1440px;
+    margin:0 auto;
+    background-color: #000000;
 }
 
 /* Navigation styles */
@@ -33,6 +36,7 @@ ul>li:nth-child(4) {
     padding: 28px 17px;
 }
 
+/* Navigation styles mobile*/
 @media screen and (max-width: 768px) {
     header {
         /* display: none; */
@@ -43,3 +47,40 @@ ul>li:nth-child(4) {
         display: none;
     }
 }
+
+/* Hero */
+
+#hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+.hero-content {
+    flex-grow: 3;
+}
+
+.hero-image {
+    width: 250px;
+    flex-grow: 1;
+}
+
+
+/* Comparison Chart */
+
+.comparison-chart table {
+    margin: 0 auto;
+    color: #ffffff;
+    text-align: left;
+}
+
+.comparison-chart > table > tbody > tr > td {
+    text-align: center;
+}
+
+.comparison-chart > table > tbody > tr {
+    border-bottom: solid 2px #ffffff;
+    padding: 16px 10px;
+}
+
