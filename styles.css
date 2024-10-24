@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
     max-width: 1440px;
-    margin:0 auto;
+    margin: 0 auto;
     background-color: #000000;
 }
 
@@ -69,18 +69,114 @@ ul>li:nth-child(4) {
 
 /* Comparison Chart */
 
-.comparison-chart table {
-    margin: 0 auto;
+.comparison-chart {
     color: #ffffff;
-    text-align: left;
 }
 
-.comparison-chart > table > tbody > tr > td {
+.comparison-chart h2 {
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.comparison-chart h2,
+h3 {
     text-align: center;
 }
 
-.comparison-chart > table > tbody > tr {
+.comparison-chart h3 {
+    max-width: 500px;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+.comparison-chart table {
+    margin: 50px auto;
+    text-align: left;
+    max-width: 446px;
+    color: #ffffff;
+}
+
+.comparison-chart>table>tbody>tr>td {
+    text-align: center;
+}
+
+.comparison-chart>table>tbody>tr {
     border-bottom: solid 2px #ffffff;
+    padding: 16px 10px;
+    font-weight: normal;
+}
+
+.comparison-chart>table>tbody>tr>th {
+    font-weight: 400;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+    line-height: 24px;
+}
+
+.comparison-chart>table>tbody>tr>td,
+th {
     padding: 16px 10px;
 }
 
+
+/* Planes Intro */
+
+.planes-intro {
+    color: #ffffff;
+}
+
+.planes-intro h2,
+h3 {
+    text-align: center;
+}
+
+.planes-intro h3 {
+    font-weight: normal;
+    max-width: 671px;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.planes-intro-overview {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 32px;
+}
+
+.planes-intro-overview h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+ul.payment-icons {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+ul.payment-icons li {
+    padding: 5px;
+}
+
+ul.checklist {
+    list-style: none;
+}
+
+ul.checklist li:before {
+    content: '✓';
+    padding-right: 5px;
+}
+
+/* Planes Intro styles mobile*/
+@media screen and (max-width: 768px) {
+    .planes-intro-overview {
+        flex-direction: column;
+    }
+    
+}
