@@ -1,8 +1,12 @@
+html {
+    background: #0C0A0C;
+}
+
 body {
     font-family: sans-serif;
     max-width: 1440px;
     margin: 0 auto;
-    background-color: #000000;
+    /* background-color: #000000; */
 }
 
 /* Navigation styles */
@@ -51,6 +55,7 @@ ul>li:nth-child(4) {
 main {
     background: #0C0A0C;
 }
+
 /* Hero */
 #hero {
     display: flex;
@@ -185,7 +190,7 @@ ul.checklist li:before {
     .planes-intro .planes-intro-overview {
         flex-direction: column;
     }
-    
+
 }
 
 /* Cards */
@@ -208,16 +213,16 @@ section.faq .faq-entry {
 }
 
 details[open] summary {
-  background: #2a2a2a;
+    background: #2a2a2a;
 }
 
 .faq details summary {
-   font-weight: 700;
-   padding: 25px 0;
-   list-style: none;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
+    font-weight: 700;
+    padding: 25px 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .faq details summary h4 {
@@ -235,9 +240,9 @@ details[open] summary {
     padding: 20px;
     background: #0f0e0e;
     margin-top: 0px;
- }
+}
 
- /* Footer */
+/* Footer */
 footer {
     background-color: #000000;
     color: #ffffff;
@@ -250,4 +255,46 @@ footer ul {
 
 footer ul li:hover {
     color: #1DB954;
+}
+
+footer .main-footer {
+    display: grid;
+    grid-template-columns: 1fr 6fr 4fr;
+
+}
+
+footer .footer-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer .socials ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0 20px;
+}
+
+footer .legal {
+    font-size: 12px;
+    display: grid;
+    grid-template-areas: 
+    "header header"
+}
+
+footer .legal div:first-child {
+    grid-area: header;
+}
+
+footer .legal div:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer .legal ul {
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+    padding: 0 20px;
 }
