@@ -10,34 +10,116 @@
 
 <body>
     <header>
-        <div class='logo'>Spotify</div>
-        <ul class="nav-items">
-            <li>Premium</li>
-            <li>Asistencia</li>
-            <li>Descargar</li>
-            <li>|</li>
-            <li>Registrarse</li>
-            <li>Iniciar Sesion</li>
-        </ul>
+        <div class="header-wrapper">
+            <div class='logo'>Spotify</div>
+            <ul class="nav-items">
+                <li>Premium</li>
+                <li>Asistencia</li>
+                <li>Descargar</li>
+                <li>|</li>
+                <li>Registrarse</li>
+                <li>Iniciar Sesion</li>
+            </ul>
+        </div>
     </header>
     <main>
         <div id="hero">
             <div class="hero-content">
                 <h1>Llévate 2 meses de Premium por 0,00 €</h1>
-                <h2>Después, solo 10,99 €/mes. Cancela cuando quieras.</h2>
-                <div>
-                    <div><a>Probar gratis durante 2 meses</a></div>
-                    <div><a>Ver todos los planes</a></div>
+                <h3>Después, solo 10,99 €/mes. Cancela cuando quieras.</h3>
+                <div class="hero-buttons">
+                    <a href="/">Probar gratis durante 2 meses</a>
+                    <a href="/">Ver todos los planes</a>
                 </div>
                 <p>Solo con Premium Individual. Gratis durante 2 meses. Luego, 10,99 € al mes. Oferta disponible solo si
                     no
                     has probado Premium. Consulta las condiciones.
                     La oferta termina el 7 de noviembre de 2024.</p>
             </div>
-            <!-- <div class="hero-image">
-            <img src="/assets/discoball_person.png">
-        </div> -->
+            <div class="hero-image">
+                <!-- <img src="/assets/discoball_person.png"> -->
+            </div>
         </div>
+        <section class="planes-intro">
+            <div class="header">
+                <h2>Planes asequibles para cualquier situación</h2>
+                <h3>Elige un plan Premium y escucha música sin anuncios y sin límites en teléfonos, altavoces y otros
+                    dispositivos. Paga de varias formas. Cancela cuando quieras.</h3>
+            </div>
+            <ul class="payment-icons">
+                <li><img src="/assets/amex.png" alt="amex icon"></li>
+                <li><img src="/assets/discover.png" alt="discover icon"></li>
+                <li><img src="/assets/visa.png" alt="visa icon"></li>
+                <li><img src="/assets/mastercard.png" alt="mastercard icon"></li>
+            </ul>
+            <div class="planes-intro-overview">
+                <h3>Todos los planes Premium incluyen lo siguiente:</h3>
+                <div>
+                    <ul class="checklist">
+                        <li>Escucha tu música favorita sin anuncios</li>
+                        <li>Descarga de canciones para disfrutarlas sin conexión</li>
+                        <li>Escucha canciones en cualquier orden
+                            Calidad del audio alta</li>
+                        <li>Escucha lo que quieras con tus amigos, en tiempo real</li>
+                        <li>Organiza la cola de reproducción</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="cards">
+            <div class="card individual">
+                <span>Gratis durante 1 mes</span>
+                <span>Premium</span>
+                <h3>Individual</h3>
+                <p>Gratis durante 1 mes</p>
+                <p>Despues, 10.99</p>
+                <ul>
+                    <li>1 cuenta Premium</li>
+                    <li>Cancela cuando quieras</li>
+                </ul>
+                <a href="/">Probar gratis durante 1 mes</a>
+                <small>Gratis durante 1 mes. Luego, 10,99 € al mes. Oferta disponible solo si no has probado Premium. Consulta las condiciones.</small>
+            </div>
+            <div class="card estudiantes">
+                <span>Gratis durante 1 mes</span>
+                <span>Premium</span>
+                <h3>Individual</h3>
+                <p>Gratis durante 1 mes</p>
+                <p>Despues, 10.99</p>
+                <ul>
+                    <li>1 cuenta Premium</li>
+                    <li>Cancela cuando quieras</li>
+                </ul>
+                <a href="/">Probar gratis durante 1 mes</a>
+                <small>Gratis durante 1 mes. Luego, 10,99 € al mes. Oferta disponible solo si no has probado Premium. Consulta las condiciones.</small>
+            </div>
+            <div class="card duo">
+                <span>Gratis durante 1 mes</span>
+                <span>Premium</span>
+                <h3>Individual</h3>
+                <p>Gratis durante 1 mes</p>
+                <p>Despues, 10.99</p>
+                <ul>
+                    <li>1 cuenta Premium</li>
+                    <li>Cancela cuando quieras</li>
+                </ul>
+                <a href="/">Probar gratis durante 1 mes</a>
+                <small>Gratis durante 1 mes. Luego, 10,99 € al mes. Oferta disponible solo si no has probado Premium. Consulta las condiciones.</small>
+            </div>
+            <div class="card familiar">
+                <span>Gratis durante 1 mes</span>
+                <span>Premium</span>
+                <h3>Individual</h3>
+                <p>Gratis durante 1 mes</p>
+                <p>Despues, 10.99</p>
+                <ul>
+                    <li>1 cuenta Premium</li>
+                    <li>Cancela cuando quieras</li>
+                </ul>
+                <a href="/">Probar gratis durante 1 mes</a>
+                <small>Gratis durante 1 mes. Luego, 10,99 € al mes. Oferta disponible solo si no has probado Premium. Consulta las condiciones.</small>
+            </div>
+        </section>
         <section class="comparison-chart">
             <h2>Siente la diferencia</h2>
             <h3>Pásate a Premium y disfruta del control total de lo que escuchas. Cancela cuando quieras.</h3>
@@ -106,35 +188,6 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
-        <section class="planes-intro">
-            <div>
-                <h2>Planes asequibles para cualquier situación</h2>
-                <h3>Elige un plan Premium y escucha música sin anuncios y sin límites en teléfonos, altavoces y otros
-                    dispositivos. Paga de varias formas. Cancela cuando quieras.</h3>
-            </div>
-            <ul class="payment-icons">
-                <li>💳</li>
-                <li>💳</li>
-                <li>💳</li>
-                <li>💳</li>
-            </ul>
-            <div class="planes-intro-overview">
-                <h3>Todos los planes Premium incluyen lo siguiente:</h3>
-                <div>
-                    <ul class="checklist">
-                        <li>Escucha tu música favorita sin anuncios</li>
-                        <li>Descarga de canciones para disfrutarlas sin conexión</li>
-                        <li>Escucha canciones en cualquier orden
-                            Calidad del audio alta</li>
-                        <li>Escucha lo que quieras con tus amigos, en tiempo real</li>
-                        <li>Organiza la cola de reproducción</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="cards">
-
         </section>
         <section class="faq">
             <div class="faq-entry">
