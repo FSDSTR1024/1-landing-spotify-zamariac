@@ -9,7 +9,7 @@ header {
     background-color: #000000;
 }
 
-.header-wrapper  {
+.header-wrapper {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -110,7 +110,7 @@ main {
 
 .hero-content .hero-buttons a:nth-child(2) {
     background-color: #000000;
-    color:#ffffff;
+    color: #ffffff;
 }
 
 .hero-content p {
@@ -132,14 +132,16 @@ main {
         flex-direction: column;
         max-width: 300px;
     }
+
     #hero .hero-content .hero-buttons a {
         margin-bottom: 10px;
     }
 
     .hero-content h3 {
-       padding-right: 15%;
+        padding-right: 15%;
     }
 }
+
 /* Planes Intro */
 
 .planes-intro {
@@ -148,7 +150,7 @@ main {
     border-top: solid 1px #2a2a2a;
     max-width: 1200px;
     margin: 0 auto;
-} 
+}
 
 .planes-intro div h2 {
     font-size: 40px;
@@ -194,7 +196,7 @@ ul.payment-icons {
     padding: 0;
 }
 
-ul.payment-icons li img{
+ul.payment-icons li img {
     border-radius: 10px;
     width: 60px;
     margin: 0 2px;
@@ -211,7 +213,7 @@ ul.checklist li {
 ul.checklist li:before {
     content: '✓';
     margin-right: 10px;
-} 
+}
 
 
 /* Planes Intro styles mobile*/
@@ -230,7 +232,7 @@ ul.checklist li:before {
 section.cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: minmax(auto, 480px);
+    grid-auto-rows: minmax(auto, 385px);
     grid-row-gap: 30px;
     grid-column-gap: 30px;
     max-width: 1200px;
@@ -239,25 +241,117 @@ section.cards {
 }
 
 section.cards .card {
-   background: #2a2a2a;
-   display: flex;
-   flex-direction: column;
+    background: #2a2a2a;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+section.cards .card .flag {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    padding: 8px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color:#000000;
+    font-weight: bold;
+}
+
+section.cards .card span:nth-child(2) {
+   margin-top: 40px;
+}
+
+section.cards .card h3 {
+    font-size: 32px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+section.cards .card a {
+    border-radius: 20px;
+    font-weight: 700;
+    padding: 10px 25px;
+    border: solid 1px #eeeeee;
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+}
+
+section.cards .individual .flag, a{
+    background-color: #f8bbc6;
+}
+
+section.cards .individual h3{
+    color: #f8bbc6;
+}
+
+section.cards .estudiantes .flag, a {
+    background-color: #c4b1d4;
+}
+
+section.cards .estudiantes h3 {
+    color: #c4b1d4;
+}
+
+section.cards .duo a {
+    background: #ffc862;
+}
+
+section.cards .duo h3 {
+    color: #ffc862;
+}
+
+section.cards .familiar a {
+    background: #a5bbd1;
+}
+
+section.cards .familiar h3 {
+    color: #a5bbd1;
+}
+
+section.cards .card p {
+    margin: 0;
+    font-weight: bold;
+}
+
+section.cards .card p:nth-child(5) {
+    font-weight: lighter;
+    padding-top: 3px;
+}
+
+section.cards .card ul {
+    border-top: solid 0.5px;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+section.cards .card small {
+    text-align: center;
+    font-size: 12px;
+    margin: 30px 0 20px;
 }
 
 section.cards .card .familiar {
     grid-column-start: 2;
- }
+}
 
 
- @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     section.cards {
-       display: block;
+        display: block;
     }
 
     section.cards .card {
         margin-bottom: 40px;
-     }
- }
+
+    }
+}
 
 
 /* FAQ */
